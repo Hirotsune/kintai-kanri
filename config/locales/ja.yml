@@ -1,0 +1,13 @@
+ja:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"
+      models:
+        admin_password:
+          attributes:
+            password:
+              blank: "パスワードを入力してください"
+              too_short: "パスワードは%{count}文字以上で入力してください"
+            description:
+              blank: "説明を入力してください"

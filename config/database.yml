@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: password  # PostgreSQLのパスワードを設定
+
+development:
+  <<: *default
+  database: kintai_kanri_development
+
+test:
+  <<: *default
+  database: kintai_kanri_test
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
