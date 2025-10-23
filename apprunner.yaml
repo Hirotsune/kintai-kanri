@@ -5,7 +5,7 @@ build:
     build:
       - echo "Building Rails application..."
 run:
-  runtime-version: latest
+  runtime-version: 3.4
   command: ./bin/thrust ./bin/rails server
   network:
     port: 80
