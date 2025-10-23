@@ -5,7 +5,6 @@ build:
     build:
       - echo "Building Rails application..."
 run:
-  runtime-version: 3.2
   command: ./bin/thrust ./bin/rails server
   network:
     port: 80
@@ -18,4 +17,4 @@ run:
     - name: DATABASE_URL
       value: "postgresql://postgres:Pc3XmlIJA1Vc8XMjkEyOS@kintai-kanri-db.ca6ucidt6odb.ap-northeast-1.rds.amazonaws.com:5432/kintai_kanri_production"
     - name: RAILS_MASTER_KEY
-      value: "7ded8195a261e7ed71196b06677ff7c9b0ce4cc92c58d3ac7219920630972e5b986c2e40ad75d8a0a8c1929c66ef7d57bbfbce7ad3b42c6d4878e18ccd42ba63"
+      value: "8a79c8f8a5e7934f3a57428fa9c0b25a"
