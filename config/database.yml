@@ -16,3 +16,16 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+
+# Rails 8 Solid Cache, Solid Queue, Solid Cable用のデータベース設定
+cache:
+  <<: *default
+  url: <%= ENV['CACHE_DATABASE_URL'] || ENV['DATABASE_URL'] %>
+
+queue:
+  <<: *default
+  url: <%= ENV['QUEUE_DATABASE_URL'] || ENV['DATABASE_URL'] %>
+
+cable:
+  <<: *default
+  url: <%= ENV['CABLE_DATABASE_URL'] || ENV['DATABASE_URL'] %>
